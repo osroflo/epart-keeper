@@ -1,0 +1,313 @@
+Changelog
+=========
+
+
+0.16.0 (2017-03-09)
+-------
+
+New
+~~~
+- Add curl library to curl using octoparts. [Oscar Romero]
+
+
+0.15.0 (2017-03-08)
+-------------------
+
+New
+~~~
+- Add an scrapper to get just octoparts items saved in a separate table.
+  [Oscar Romero]
+
+Changes
+~~~~~~~
+- Update changelog. [Jenkins]
+- Enable partnumber search. [Oscar Romero]
+
+
+0.14.0 (2017-02-13)
+-------------------
+
+New
+~~~
+- Add octoparts scrapper. [osroflo]
+- Add settings table. [osroflo]
+- Improve logic in catching parts; [osroflo]
+- Add octoparts scrapper. [osroflo]
+
+Changes
+~~~~~~~
+- Update changelog. [Jenkins]
+- Update changelog. [Jenkins]
+- Update changelog. [Jenkins]
+- Fix typos in comments. Improve code architecture. [osroflo]
+
+Fix
+~~~
+- Improve crawler main abstract class logic to handle one single point
+  ot update in the DB. [osroflo]
+
+
+0.13.0 (2016-08-15)
+-------------------
+
+New
+~~~
+- Add 2sourcecomponents in the export query. [osroflo]
+- Add 1sourcecomponents to the seeder table. [osroflo]
+- 1sourcecomponents.com scraper. [Chamberline Ekejiuba]
+
+Changes
+~~~~~~~
+- Update changelog. [Jenkins]
+
+Fix
+~~~
+- Set the correct logic to avoid crash when the dom was clear. [osroflo]
+
+
+0.12.0 (2016-08-14)
+-------------------
+
+Changes
+~~~~~~~
+- Update changelog. [Jenkins]
+
+Fix
+~~~
+- Add array as default value to avoid crash the ui when there is no
+  array passed to the checked values for manufacturer type of filter.
+  [osroflo]
+
+
+0.11.0 (2016-08-14)
+-------------------
+
+Changes
+~~~~~~~
+- Update changelog. [Jenkins]
+
+Fix
+~~~
+- Set the proper logic to syncrhonize manufacturers. [osroflo]
+
+
+0.10.0 (2016-08-14)
+-------------------
+
+New
+~~~
+- Add manufacturer filter. Also add a synchronization process (once a
+  day) to keep manufacturer filter table updated. [osroflo]
+- Add manufacturer table to add filter capabilities. [osroflo]
+
+Changes
+~~~~~~~
+- Update changelog. [Jenkins]
+- Add option command to scrape by file. [osroflo]
+
+Fix
+~~~
+- Optimize the query to export reports to csv. This will avoid the
+  system crash because the not enough space in tmp. [osroflo]
+
+
+0.9.0 (2016-08-08)
+------------------
+
+Changes
+~~~~~~~
+- Update changelog. [Jenkins]
+- Improve Crawler architecture to allow main url. Impove the
+  4starelectronics to allow crawl by pn. [osroflo]
+
+
+0.8.0 (2016-08-06)
+------------------
+
+Changes
+~~~~~~~
+- Update changelog. [Jenkins]
+
+Fix
+~~~
+- Fix problem to storing parts in db from 4starselectronics. [osroflo]
+- Set correct function name. [osroflo]
+
+
+0.7.0 (2016-08-04)
+------------------
+
+New
+~~~
+- Add gimme proxy api key logic. [osroflo]
+- Add 4startelectronics to the seeder. [osroflo]
+- Register command for 4starelectronics.com crawler. [Chamberline
+  Ekejiuba]
+- Command for 4starelectronics.com crawler. [Chamberline Ekejiuba]
+- 4starelectronics.com crawler. [Chamberline Ekejiuba]
+
+Changes
+~~~~~~~
+- Update changelog. [Jenkins]
+- Set proper origin ID. [osroflo]
+- Set description data type from TEXT to VARCHAR to improve DB
+  performance. [osroflo]
+
+Fix
+~~~
+- Optimize query to improve performace for export to csv. [osroflo]
+- Optimize search. [osroflo]
+
+
+0.6.0 (2016-08-01)
+------------------
+
+New
+~~~
+- Add origin to the export SQL. [osroflo]
+- Improve UI. [osroflo]
+- Add verical scrapper. [osroflo]
+
+Changes
+~~~~~~~
+- Update changelog. [Jenkins]
+
+Fix
+~~~
+- Pn, is complete, origin filters and csv export. [osroflo]
+- Improve vyrian crawler. [osroflo]
+- Improve search UI. [osroflo]
+
+
+0.5.0 (2016-07-24)
+------------------
+
+New
+~~~
+- Add vyrian to the scrapping process. [osroflo]
+
+Changes
+~~~~~~~
+- Update changelog. [Jenkins]
+- Add seeder. [osroflo]
+- Update size param. [osroflo]
+
+
+0.4.0 (2016-07-13)
+------------------
+
+New
+~~~
+- Add random number to stock qty. Add unwanted signs to PN filter.
+  [osroflo]
+
+Changes
+~~~~~~~
+- Update changelog. [Jenkins]
+
+
+0.3.0 (2016-07-10)
+------------------
+
+New
+~~~
+- Add header to csv file. Improve comments. Add method to convert array
+  conditions to string. [osroflo]
+- Add download folder. [osroflo]
+- Add library to export to CSV directly from MySQL. [osroflo]
+
+Changes
+~~~~~~~
+- Update changelog. [Jenkins]
+- Update changelog. [Jenkins]
+- Improve the UI. [osroflo]
+- Remove un-needed file. [osroflo]
+
+Fix
+~~~
+- The csv export was really slow. It was changed to export directly from
+  mysql db. [osroflo]
+
+
+0.2.0 (2016-07-09)
+------------------
+
+New
+~~~
+- Add link to admin page and redirect to it on login. [Chamberline
+  Ekejiuba]
+- Create export button for parts. [Chamberline Ekejiuba]
+- Add CSV writer library. [Chamberline Ekejiuba]
+- Add part number search. [Chamberline Ekejiuba]
+- Add 'is complete' filters. [Chamberline Ekejiuba]
+- Add created/updated date and filters. [Chamberline Ekejiuba]
+- Add jQuery UI plugin for datepicker. [Chamberline Ekejiuba]
+- Paginated view of all parts in the database. [Chamberline Ekejiuba]
+
+Changes
+~~~~~~~
+- Update changelog. [Jenkins]
+- Update titles. Remove register from guest. [osroflo]
+- Use daterangepicker for filters. [Chamberline Ekejiuba]
+- Replace jQuery UI datepicker with daterangepicker Bootstrap plugin.
+  [Chamberline Ekejiuba]
+- Use js- class for triggering datepicker. [Chamberline Ekejiuba]
+- Have only one submit button and style filters better. [Chamberline
+  Ekejiuba]
+- Style active page as larger number instead of with grey background.
+  [Chamberline Ekejiuba]
+- Display boolean values as 'Yes' or 'No' [Chamberline Ekejiuba]
+
+Fix
+~~~
+- Make active pagination link highlighted. [Chamberline Ekejiuba]
+
+Other
+~~~~~
+- Add login functionality. [Chamberline Ekejiuba]
+
+
+0.1.0 (2016-07-04)
+------------------
+
+New
+~~~
+- Add instructions to schedule commands. [osroflo]
+- Add logging. [osroflo]
+- Add setting to avoid curl Failed to receive SOCKS5 connect request
+  ack. [osroflo]
+- Enable cron. [osroflo]
+- Add instructions to setup system. [osroflo]
+- Add seeders. [osroflo]
+- Add new table. [osroflo]
+- Abstract crawler. Create a separate class per listing website to add
+  more scrappers. [osroflo]
+- Add properties to store attributes keys. Remove commented lines.
+  Integrate DB. [osroflo]
+- Add fillable property. [osroflo]
+- Add crawler library. [osroflo]
+- Add reactphp to create multi-thred calls. Add console command to
+  automate. [osroflo]
+- Add instructions to setup db. [osroflo]
+- Create migrations. [osroflo]
+- Create models. [osroflo]
+- Initial commit. [osroflo]
+
+Changes
+~~~~~~~
+- Update changelog. [Jenkins]
+- Update changelog. [Jenkins]
+- Updated proxy. [osroflo]
+- Set default timeout. [osroflo]
+- Update table structure. [osroflo]
+- Update seeder run. [osroflo]
+- Remove un-used table. [osroflo]
+- Remove unused fields. [osroflo]
+- First testing. [osroflo]
+- Update changelog. [Jenkins]
+- Update database settings. [osroflo]
+- Move model to directory. [osroflo]
+
+Other
+~~~~~
+- Changelog.txt deleted online with Bitbucket. [Roger Vasquez]
