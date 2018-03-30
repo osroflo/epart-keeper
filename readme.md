@@ -1,7 +1,7 @@
 # ePart Keeper
 System process to keep content up-to-date. The content is the electronic parts information.:
 
-  1- Update the current database of electronic parts that the client already has (missing info). The following info should be updated:
+1- Update the current database of electronic parts that the client already has (missing info). The following info should be updated:
 - Manufacturer
 - PN
 - Product description
@@ -10,6 +10,7 @@ System process to keep content up-to-date. The content is the electronic parts i
 - Product or electronic part image.
 
 2 - Every part that is quoted in the current invoice system should update the DB of electronic parts (products) automatically.
+
 3 - Constantly getting new parts using a scraper or any other API bridge that can provide parts information.
 
 4 - Notification System:
